@@ -79,11 +79,11 @@ public class QuizGUI extends JFrame implements ActionListener {
 		setLocation(gd.getDisplayMode().getWidth() / 2 - getWidth() / 2, gd.getDisplayMode().getHeight() / 2 - getHeight() / 2);
 		setVisible(true);
 		
-		try {
-			folderLocation = new File("").getAbsolutePath().concat("\\SavedQuizQuestions\\");
-			container.load(folderLocation.concat("ExampleQuiz.txt"));
+		folderLocation = new File("").getAbsolutePath().concat("\\SavedQuizQuestions\\");
+		try {	
+			container.load(folderLocation.concat("ExampleQuizQuestions.txt"));
 		} catch (LoadSaveException e) {
-			JOptionPane.showMessageDialog(this, "Could not load \"ExampleQuiz.txt\".");
+			JOptionPane.showMessageDialog(this, "Could not load \"ExampleQuizQuestions.txt\".");
 		}
 		pnlMain.showWelcomeScreen();
 	}
