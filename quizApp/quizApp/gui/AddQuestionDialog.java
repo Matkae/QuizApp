@@ -36,7 +36,7 @@ public class AddQuestionDialog extends JDialog implements ActionListener {
 		JPanel gridPanel = new JPanel(new GridLayout(5, 1, 5, 5));
 		add(gridPanel, BorderLayout.CENTER);
 		
-		JLabel[] labels = {new JLabel("Question:"), new JLabel("Correct Answer:"), new JLabel("Wrong Answers:"), new JLabel(""), new JLabel("")};
+		JLabel[] labels = {new JLabel("   Question:"), new JLabel("   Correct Answer:"), new JLabel("   Wrong Answers:"), new JLabel(""), new JLabel("")};
 		txtFields = new JTextField[labels.length];
 		JPanel[] inputPanel = new JPanel[labels.length];
 		for (int i = 0; i < txtFields.length; i++) {
