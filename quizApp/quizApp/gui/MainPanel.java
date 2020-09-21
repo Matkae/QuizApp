@@ -22,7 +22,6 @@ public class MainPanel extends JPanel {
 		txtPane = new JTextPane();
 		txtPane.setContentType("text/html");
 		txtPane.setEditable(false);
-		txtPane.setText("<html><h1 style=font-size:30px><center><br>Welcome to QuizApp!</center></h1></html>");
 		add(txtPane, BorderLayout.CENTER);		
 		
 		JPanel pnlButtons = new JPanel(new GridLayout(1, 0, 5 ,5));
@@ -39,6 +38,7 @@ public class MainPanel extends JPanel {
 	}
 	
 	public void showWelcomeScreen() {
+		txtPane.setText("<html><h1 style=font-size:30px><center><br>Welcome to QuizApp!</center></h1></html>");
 		if (QuestionContainer.instance().getQuestions().size() > 0) {
 			btnOne.setText("Start Quiz");
 			btnTwo.setText("Show Questions");
