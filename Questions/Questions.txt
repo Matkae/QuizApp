@@ -1,0 +1,19 @@
+new question
+What is the capital of Germany?
+Berlin
+Munich
+Hamburg
+Frankfurt
+new question
+Which programing language was used to write this app?
+Java
+Python
+C
+C++
+new question
+What equals 9 + 7 * 3?
+30
+48
+34
+38
+end
